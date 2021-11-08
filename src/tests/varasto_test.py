@@ -71,7 +71,7 @@ class TestVarasto(unittest.TestCase):
     def test_alku_saldo_alle_nolla(self):
         self.varasto = Varasto(10, -1)
         
-        self.assertAlmostEqual(self.varasto.saldo, 1) #testin hajoitus saldon kuuluisi olla 0
+        self.assertAlmostEqual(self.varasto.saldo, 0)
         
     def test_str(self):
         assert self.varasto.__str__() == 'saldo = 0, vielä tilaa 10'
